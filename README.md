@@ -4,6 +4,11 @@
 
 ## Открыть
 
+Опубликованный прототип: https://glazest-t.github.io/keys-mobile-onboarding/
+
+- [Вариант 1](https://glazest-t.github.io/keys-mobile-onboarding/?variant=1&step=1)
+- [Вариант 2](https://glazest-t.github.io/keys-mobile-onboarding/?variant=2&step=1)
+
 `prototype.html` — автономный прототип. Открывается двойным кликом, содержит оба варианта, все изображения и шрифты. Интернет и сервер не требуются.
 
 Для разработки запустите из этой папки:
