@@ -1,0 +1,219 @@
+/* Three stories in the Orbit brand: trip, combined benefits, personal discovery. */
+#keysOnboardingPrototype[hidden]{display:none!important}
+body[data-keys-scenario=onboarding] #keysUnifiedPrototype>:not(#keysOnboardingPrototype){display:none!important}
+#keysOnboardingPrototype{display:flex;justify-content:center;padding:6px 0 22px;font-family:var(--font-sans);color:#171b2d}
+#keysOnboardingPrototype *{box-sizing:border-box}
+#keysOnboardingPrototype .kon-phone{position:relative;isolation:isolate;width:390px;max-width:100%;height:var(--keys-preview-height,844px);min-height:440px;display:flex;flex-direction:column;overflow:hidden;border:1px solid #eceef2;border-radius:30px;background:#fff;box-shadow:0 16px 60px #1c284112;container-type:size;touch-action:pan-y}
+#keysOnboardingPrototype button{font:500 14px/21px var(--font-sans);cursor:pointer;flex:none}
+#keysOnboardingPrototype button[hidden]{display:none!important}
+#keysOnboardingPrototype button:focus-visible{outline:2px solid #3a66f0;outline-offset:3px}
+#keysOnboardingPrototype .kon-header{height:64px;flex:none;display:flex;align-items:center;gap:10px;padding:8px 20px 0}
+#keysOnboardingPrototype .kon-header button{height:44px;border:0;background:none;color:#62687b;padding:0}
+#keysOnboardingPrototype .kon-header [data-onboard-skip]{margin-left:auto;font-size:13px}
+#keysOnboardingPrototype .kon-back{width:32px}
+#keysOnboardingPrototype .kon-back svg{width:22px;height:22px}
+.kon-brand{display:flex;align-items:center;gap:8px}
+#keysOnboardingPrototype .kon-wordmark{display:block;width:80px;height:auto}
+.kon-orbit{position:relative;width:22px;height:22px;border:4.1px solid #3a66f0;border-radius:50%;transform:rotate(calc(var(--kon-step)*90deg));transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.kon-orbit i{position:absolute;left:-5.7px;top:3.2px;width:7.3px;height:7.3px;border-radius:50%;background:#3a66f0;box-shadow:0 0 0 1.3px #fff}
+#keysOnboardingPrototype .kon-stage{position:relative;flex:1;min-height:0;overflow:hidden}
+#keysOnboardingPrototype .kon-slide{position:absolute;inset:0;display:flex;flex-direction:column;transform:translateX(calc(var(--kon-offset)*100%));transition:transform .36s cubic-bezier(.2,.8,.2,1),opacity .2s}
+#keysOnboardingPrototype .kon-visual{margin:12px 16px 0;flex:1;min-height:180px;max-height:420px;position:relative;overflow:hidden;border-radius:26px;background:linear-gradient(145deg,#dce8ff,#eeedff 65%,#e6e0ff)}
+#keysOnboardingPrototype [data-theme=benefits] .kon-visual{background:linear-gradient(145deg,#deeee9,#e6f4ee 40%,#e9edff)}
+#keysOnboardingPrototype [data-theme=match] .kon-visual{background:linear-gradient(145deg,#ece6ff,#e4e7ff 50%,#d5edff)}
+#keysOnboardingPrototype .kon-scene{position:absolute;width:320px;height:360px;top:50%;left:50%;transform:translate(-50%,-50%) scale(var(--kon-art-scale,1));transform-origin:center;font:400 12px/17px var(--font-sans)}
+#keysOnboardingPrototype .kon-scene svg{display:block;width:20px;height:20px;flex:none}
+#keysOnboardingPrototype .kon-scene strong{font-weight:600}
+#keysOnboardingPrototype .kon-art-orbit{position:absolute;width:310px;height:310px;left:4px;top:20px;opacity:.13;animation:kon-orbit-drift 30s linear infinite}
+#keysOnboardingPrototype .kon-copy{padding:24px 24px 12px;flex:none}
+#keysOnboardingPrototype .kon-eyebrow{display:block;color:#3b57b5;font:500 12px/18px var(--font-sans);margin-bottom:10px}
+#keysOnboardingPrototype .kon-copy h1{margin:0;font:600 28px/32px var(--font-sans)!important;letter-spacing:-.7px;outline:none}
+#keysOnboardingPrototype .kon-copy p{margin:14px 0 0;font:400 15px/22px var(--font-sans);color:#62687b;text-wrap:pretty}
+#keysOnboardingPrototype .kon-footer{padding:16px 20px max(20px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:4px;flex:none;background:#fff}
+#keysOnboardingPrototype .kon-primary{display:grid;grid-template-columns:40px minmax(0,1fr) 40px;align-items:center;gap:4px;padding:0 16px;height:52px;border:0;border-radius:16px;background:#3a66f0;color:#fff}
+#keysOnboardingPrototype .kon-progress{grid-column:3;grid-row:1;justify-self:end;font:400 12px/18px var(--font-sans);font-variant-numeric:tabular-nums;white-space:nowrap;color:#fff}
+#keysOnboardingPrototype [data-onboard-label]{grid-column:2;grid-row:1}
+#keysOnboardingPrototype .kon-secondary{height:36px;border:0;border-radius:14px;background:transparent;color:#3a66f0;font-size:13px}
+/* Trip: real app fragments gathered around one booking. */
+#keysOnboardingPrototype .kon-search-preview{position:absolute;top:18px;left:18px;right:18px;display:flex;align-items:center;gap:10px;padding:13px 14px;background:#fff;border-radius:16px;box-shadow:0 8px 24px #25488f0c;color:#36415d;font-size:14px}
+#keysOnboardingPrototype .kon-small-orbit{margin-left:auto;width:22px;height:22px}
+#keysOnboardingPrototype .kon-small-orbit img{width:100%;height:100%}
+#keysOnboardingPrototype .kon-booking-preview{position:absolute;top:83px;left:32px;right:24px;display:flex;overflow:hidden;border:4px solid #fff;border-radius:20px;background:#fff;box-shadow:0 12px 32px #36497b18;transform:rotate(-3deg)}
+#keysOnboardingPrototype .kon-hotel-photo{width:93px;height:150px;object-fit:cover;object-position:90% 55%}
+#keysOnboardingPrototype .kon-booking-info{display:flex;flex-direction:column;gap:6px;padding:12px 9px;color:#697184}
+#keysOnboardingPrototype .kon-booking-info strong{font-size:16px;line-height:22px;color:#171b2d}
+#keysOnboardingPrototype .kon-status{display:flex;gap:3px;align-items:center;font-size:10px;color:#137351;white-space:nowrap}
+#keysOnboardingPrototype .kon-status svg{width:12px;height:12px}
+#keysOnboardingPrototype .kon-booking-actions{display:flex;gap:8px;margin-top:6px;font-size:10px;line-height:15px;color:#3456bd}
+#keysOnboardingPrototype .kon-wifi-preview,#keysOnboardingPrototype .kon-service-preview{position:absolute;display:flex;align-items:center;gap:10px;padding:13px;border-radius:18px;box-shadow:0 8px 24px #25488f12}
+#keysOnboardingPrototype .kon-wifi-preview{left:8px;top:236px;width:226px;background:#fff;transform:rotate(-3deg)}
+#keysOnboardingPrototype .kon-mini-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:#eef2ff;color:#3456bd}
+#keysOnboardingPrototype .kon-wifi-preview div,#keysOnboardingPrototype .kon-service-preview div{display:flex;flex-direction:column;gap:2px}
+#keysOnboardingPrototype .kon-wifi-preview strong,#keysOnboardingPrototype .kon-service-preview strong{font-size:13px}
+#keysOnboardingPrototype .kon-wifi-preview div>span{color:#697184;font-size:11px}
+#keysOnboardingPrototype .kon-service-preview{right:8px;bottom:9px;background:#3a66f0;color:#fff;transform:rotate(3deg)}
+#keysOnboardingPrototype .kon-service-preview .kon-mini-icon{background:#ffffff20;color:#fff}
+#keysOnboardingPrototype .kon-service-preview div>span{display:flex;align-items:center;gap:4px;color:#e4edff;font-size:11px}
+#keysOnboardingPrototype .kon-service-preview div>span svg{width:12px;height:12px}
+/* Benefits: two distinct loyalty sources, one clear total. */
+#keysOnboardingPrototype .kon-direct-label{position:absolute;top:18px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:7px;font-weight:500;color:#23644f}
+#keysOnboardingPrototype .kon-direct-label svg{width:17px;height:17px}
+#keysOnboardingPrototype .kon-hotel-member{position:absolute;top:55px;left:18px;right:18px;padding:18px;display:flex;align-items:center;justify-content:space-between;border-radius:20px;background:#fff7e8;color:#75501e;box-shadow:0 10px 24px #66735310}
+#keysOnboardingPrototype .kon-hotel-member>div,#keysOnboardingPrototype .kon-app-points>div{display:flex;flex-direction:column;gap:6px}
+#keysOnboardingPrototype .kon-hotel-member strong{font-size:18px;line-height:24px;color:#382b18}
+#keysOnboardingPrototype .kon-gold-label{font-size:11px;font-weight:500}
+#keysOnboardingPrototype .kon-hotel-member>b{font-size:35px;line-height:40px;letter-spacing:-1.8px}
+#keysOnboardingPrototype .kon-hotel-member>b span{font-size:23px}
+#keysOnboardingPrototype .kon-combine{position:absolute;z-index:2;top:149px;left:143px;width:34px;height:34px;border:3px solid #e5f2ee;border-radius:50%;display:grid;place-items:center;background:#fff;color:#33654f;font:500 23px/28px var(--font-sans)}
+#keysOnboardingPrototype .kon-app-points{position:absolute;top:174px;left:18px;right:18px;display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-radius:20px;background:#3a66f0;color:#fff;box-shadow:0 10px 24px #365bc324}
+#keysOnboardingPrototype .kon-app-points strong{font-size:28px;line-height:32px;letter-spacing:-.5px}
+#keysOnboardingPrototype .kon-app-points small{font-size:12px;font-weight:400;letter-spacing:0}
+#keysOnboardingPrototype .kon-app-points>div>span:last-child{font-size:10px;color:#eff3ff}
+#keysOnboardingPrototype .kon-app-points>img{width:55px;height:55px;filter:brightness(0) invert(1);opacity:.75}
+#keysOnboardingPrototype .kon-total-preview{position:absolute;bottom:9px;left:18px;right:18px;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 14px;border-radius:16px;background:#fff;color:#697184}
+#keysOnboardingPrototype .kon-total-preview>div>span{display:block;font-size:10px;line-height:14px}
+#keysOnboardingPrototype .kon-total-preview>div>div{display:flex;align-items:baseline;gap:8px;margin-top:3px}
+#keysOnboardingPrototype .kon-total-preview strong{font-size:22px;line-height:26px;color:#171b2d;letter-spacing:-.5px}
+#keysOnboardingPrototype .kon-total-preview s{font-size:12px}
+#keysOnboardingPrototype .kon-saving{font-size:10px;line-height:15px;color:#147350;background:#e6f6ec;border-radius:10px;padding:6px 10px}
+#keysOnboardingPrototype .kon-saving b{font-size:14px;font-weight:600}
+/* Personal recommendations: familiar hotel card, signals and a saved heart. */
+#keysOnboardingPrototype .kon-interest{position:absolute;display:flex;align-items:center;gap:6px;background:#fff;border-radius:24px;padding:9px 12px;color:#4d4d83;font-size:12px;box-shadow:0 6px 18px #44358110}
+#keysOnboardingPrototype .kon-interest svg{width:16px;height:16px}
+#keysOnboardingPrototype .kon-interest-one{top:17px;left:22px;transform:rotate(-7deg);color:#ae3e75}
+#keysOnboardingPrototype .kon-interest-two{top:32px;right:14px;transform:rotate(6deg)}
+#keysOnboardingPrototype .kon-match-card{position:absolute;top:77px;left:24px;right:24px;border:5px solid #fff;border-radius:23px;background:#fff;overflow:hidden;box-shadow:0 14px 30px #2c497b1a;transform:rotate(-3deg)}
+#keysOnboardingPrototype .kon-match-photo{height:122px;position:relative}
+#keysOnboardingPrototype .kon-match-photo>img{width:100%;height:100%;object-fit:cover}
+#keysOnboardingPrototype .kon-match-heart{position:absolute;top:10px;right:10px;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#fff;color:#d04f7c}
+#keysOnboardingPrototype .kon-match-heart svg{fill:#d04f7c;width:20px;height:20px}
+#keysOnboardingPrototype .kon-match-info{padding:12px 10px;display:flex;flex-direction:column;gap:6px}
+#keysOnboardingPrototype .kon-personal-label{font-size:11px;line-height:16px;color:#3456bd}
+#keysOnboardingPrototype .kon-match-info>strong{font-size:19px;line-height:24px}
+#keysOnboardingPrototype .kon-match-tags{display:flex;gap:6px;margin-top:3px}
+#keysOnboardingPrototype .kon-match-tags>span{display:flex;align-items:center;gap:3px;padding:4px 5px;background:#f1f4ff;border-radius:7px;color:#3456bd;font-size:9px;white-space:nowrap}
+#keysOnboardingPrototype .kon-match-tags svg{width:12px;height:12px}
+#keysOnboardingPrototype .kon-match-note{position:absolute;bottom:9px;left:12px;right:12px;display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 6px;border-radius:13px;background:#e7f6ef;color:#196f51;font-size:10px;box-shadow:0 8px 16px #2c497b0c}
+#keysOnboardingPrototype .kon-match-note svg{width:14px;height:14px}
+#keysOnboardingPrototype .is-current .kon-appear{animation:kon-card-arrive .7s cubic-bezier(.2,.8,.2,1) both;animation-delay:.08s}
+#keysOnboardingPrototype .is-current .kon-appear:nth-of-type(2){animation-delay:.18s}
+#keysOnboardingPrototype .is-current .kon-appear:nth-of-type(3){animation-delay:.3s}
+#keysOnboardingPrototype .is-current .kon-appear:nth-of-type(4){animation-delay:.42s}
+#keysOnboardingPrototype .kon-slide:not(.is-current) *,#keysOnboardingPrototype .kon-loading .kon-appear{animation-play-state:paused!important}
+@keyframes kon-card-arrive{from{opacity:0;translate:0 18px;scale:.95}to{opacity:1;translate:0 0;scale:1}}
+@keyframes kon-orbit-drift{to{rotate:360deg}}
+@container(max-height:700px){
+ #keysOnboardingPrototype .kon-header{height:52px;padding-top:0}
+ #keysOnboardingPrototype .kon-visual{margin-top:6px;min-height:170px}
+ #keysOnboardingPrototype .kon-copy{padding:16px 22px 6px}
+ #keysOnboardingPrototype .kon-eyebrow{margin-bottom:6px}
+ #keysOnboardingPrototype .kon-copy h1{font-size:26px!important;line-height:30px!important}
+ #keysOnboardingPrototype .kon-copy p{font-size:14px;line-height:20px;margin-top:10px}
+ #keysOnboardingPrototype .kon-footer{padding:10px 20px max(12px,env(safe-area-inset-bottom))}
+}
+@container(max-height:540px){
+ #keysOnboardingPrototype .kon-slide{overflow-y:auto}
+ #keysOnboardingPrototype .kon-visual{flex:none;height:170px}
+ #keysOnboardingPrototype .kon-copy{padding-top:12px}
+ #keysOnboardingPrototype .kon-copy h1{font-size:23px!important;line-height:27px!important}
+}
+@media(max-width:520px){#keysOnboardingPrototype{padding:0}#keysOnboardingPrototype .kon-phone{width:100%;border:0;border-radius:0;box-shadow:none}}
+@media(prefers-reduced-motion:reduce){#keysOnboardingPrototype *{animation:none!important;transition:none!important}.kon-slide{transform:none;opacity:0}.kon-slide.is-current{opacity:1}}
+/* The same key-to-orbit loading animation as login, then reveal the first slide. */
+#keysOnboardingPrototype .kon-phone{position:relative;isolation:isolate}
+#keysOnboardingPrototype .kon-splash{pointer-events:auto;animation:kon-splash-exit 2.6s both}
+#keysOnboardingPrototype .kon-splash .keys-login-flight{animation:none;top:calc(50% - 132px)}
+#keysOnboardingPrototype .kon-splash svg{display:block;width:160px!important;height:160px!important;overflow:visible}
+#keysOnboardingPrototype .kon-splash .keys-login-word{color:#fff;animation:kFade 2s cubic-bezier(.65,0,.35,1) both!important}
+#keysOnboardingPrototype .kon-splash>p{position:absolute;top:calc(50% + 108px);left:16px;right:16px;margin:0;text-align:center;color:#e3eaff;font:400 15px/22px var(--font-sans)}
+#keysOnboardingPrototype .kon-loading>:is(header,main,footer){animation:kon-content-enter .45s 2.1s both}
+@keyframes kon-splash-exit{0%,80%{opacity:1;background:#3a66f0}100%{opacity:0;background:#3a66f0}}
+@keyframes kon-content-enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){#keysOnboardingPrototype .kon-splash{display:none}}
+
+#keysOnboardingPrototype [data-onboard-label]{grid-column:2;grid-row:1}
+#keysOnboardingPrototype [data-onboard-progress]{grid-row:1}
+
+/* Variant 2 is deliberately isolated: Variant 1 retains its approved styling. */
+#keysOnboardingPrototype [data-theme="trip"] .kon-visual{border-radius:32px;background:#eef2ff}
+#keysOnboardingPrototype[data-variant="2"] [data-theme="benefits"] .kon-visual{background:#edf6f0}
+#keysOnboardingPrototype[data-variant="2"] [data-theme="match"] .kon-visual{background:#f1edfc}
+#keysOnboardingPrototype [data-theme="trip"] .kon-eyebrow{display:inline-block;padding:4px 10px;margin-bottom:10px;border-radius:20px;background:#edf2ff;font-size:11px;line-height:16px;color:#3556ac}
+#keysOnboardingPrototype[data-variant="2"] [data-theme="benefits"] .kon-eyebrow{background:#e8f5ed;color:#24704d}
+#keysOnboardingPrototype[data-variant="2"] [data-theme="match"] .kon-eyebrow{background:#f0ebfa;color:#74529a}
+#keysOnboardingPrototype[data-variant="2"] .kon-copy p{margin-top:12px}
+#keysOnboardingPrototype .kon2-orbits{position:absolute;inset:0;overflow:hidden}
+#keysOnboardingPrototype .kon2-orbits i{position:absolute;left:50%;top:172px;width:150px;height:150px;border:1px solid #b9c9f1;border-radius:50%;translate:-50% -50%}
+#keysOnboardingPrototype .kon2-orbits i:nth-child(2){width:250px;height:250px}
+#keysOnboardingPrototype .kon2-orbits i:nth-child(3){width:356px;height:356px}
+#keysOnboardingPrototype .kon2-destination{position:absolute;top:27px;width:140px;height:156px;padding:5px 5px 0;border-radius:20px;background:#fff;box-shadow:0 10px 22px #24427412}
+#keysOnboardingPrototype .kon2-destination>img{display:block;width:100%;height:115px;object-fit:cover;border-radius:15px}
+#keysOnboardingPrototype .kon2-destination>span{display:flex;justify-content:center;align-items:center;gap:4px;height:34px;font-size:12px;font-weight:500;color:#34405b}
+#keysOnboardingPrototype .kon2-destination svg{width:13px;height:13px}
+#keysOnboardingPrototype .kon2-city{left:12px;rotate:-9deg}
+#keysOnboardingPrototype .kon2-sea{right:12px;top:43px;rotate:8deg}
+#keysOnboardingPrototype .kon2-hub{position:absolute;left:116px;top:151px;width:88px;height:88px;display:grid;place-items:center;background:#3a66f0;border:6px solid #eef2ff;border-radius:30px;box-shadow:0 8px 22px #355ed42a}
+#keysOnboardingPrototype .kon2-hub>img{width:46px;height:46px;filter:brightness(0) invert(1)}
+#keysOnboardingPrototype .kon2-hub-caption{position:absolute;top:245px;left:0;right:0;text-align:center;font-size:13px;font-weight:500;color:#405580}
+#keysOnboardingPrototype .kon2-dock{position:absolute;left:14px;right:14px;bottom:15px;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;background:#fff;padding:12px 8px;border-radius:22px;box-shadow:0 10px 25px #304e7510}
+#keysOnboardingPrototype .kon2-dock>div{display:flex;flex-direction:column;align-items:center;gap:7px}
+#keysOnboardingPrototype .kon2-dock>div>span{display:grid;place-items:center;width:34px;height:34px;border-radius:12px;background:#eef2ff;color:#3a66f0}
+#keysOnboardingPrototype .kon2-dock strong{font-size:10px;line-height:14px;font-weight:500}
+#keysOnboardingPrototype .kon2-direct{position:absolute;top:18px;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:6px;color:#287151;font-size:12px;font-weight:500}
+#keysOnboardingPrototype .kon2-direct svg{width:16px;height:16px}
+#keysOnboardingPrototype .kon2-saving-card{position:absolute;top:60px;width:140px;height:155px;padding:13px;border-radius:22px;display:flex;flex-direction:column;gap:7px}
+#keysOnboardingPrototype .kon2-hotel-saving{left:13px;background:#fff1d8;color:#795319;rotate:-4deg}
+#keysOnboardingPrototype .kon2-keys-saving{right:13px;background:#3a66f0;color:#fff;rotate:4deg}
+#keysOnboardingPrototype .kon2-card-symbol{height:23px;display:flex;align-items:center}
+#keysOnboardingPrototype .kon2-card-symbol>img{width:23px;height:23px;filter:brightness(0) invert(1)}
+#keysOnboardingPrototype .kon2-saving-card>span:not(.kon2-card-symbol){font-size:11px;line-height:15px}
+#keysOnboardingPrototype .kon2-saving-card>strong{font-size:32px;line-height:36px;letter-spacing:-1px;white-space:nowrap}
+#keysOnboardingPrototype .kon2-saving-card>strong>small{font-size:22px}
+#keysOnboardingPrototype .kon2-saving-card .kon2-tier{margin-top:auto;font-size:10px!important}
+#keysOnboardingPrototype .kon2-plus{position:absolute;top:125px;left:143px;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#fff;color:#304662;font:500 25px/1 var(--font-sans);box-shadow:0 2px 8px #294d3c16}
+#keysOnboardingPrototype .kon2-receipt{position:absolute;left:22px;right:22px;top:222px;padding:13px 16px 0;border-radius:22px;background:white;box-shadow:0 10px 24px #294d3c0c}
+#keysOnboardingPrototype .kon2-price{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:3px 12px}
+#keysOnboardingPrototype .kon2-price>span{font-size:11px;color:#677583}
+#keysOnboardingPrototype .kon2-price>s{grid-column:2;font-size:12px;color:#738079}
+#keysOnboardingPrototype .kon2-price>strong{grid-column:1/-1;font-size:33px;line-height:38px;letter-spacing:-1px;color:#173e30}
+#keysOnboardingPrototype .kon2-price small{font-size:25px}
+#keysOnboardingPrototype .kon2-saved{display:flex;align-items:center;gap:5px;margin-top:9px;padding:9px 0;border-top:1px dashed #d7e6dd;color:#22734f;font-size:11px}
+#keysOnboardingPrototype .kon2-saved svg{width:14px;height:14px}
+#keysOnboardingPrototype .kon2-saved strong{margin-left:auto;font-size:14px}
+/* Preferences, likes and views feed a personal shortlist. */
+#keysOnboardingPrototype .kon-scene .kon2-connections{position:absolute;inset:0;width:320px;height:360px;fill:none;stroke:#b5a2d2;stroke-width:2;stroke-linecap:round;stroke-dasharray:3 5}
+#keysOnboardingPrototype .kon2-request{position:absolute;left:17px;right:17px;top:16px;display:flex;align-items:center;gap:12px;padding:15px 18px;border-radius:24px;background:#fff;box-shadow:0 8px 24px #573f8110}
+#keysOnboardingPrototype .kon2-request>span{width:38px;height:38px;display:grid;place-items:center;border-radius:13px;background:#f1edfc;color:#78529c;flex:none}
+#keysOnboardingPrototype .kon2-request>div{display:flex;flex-direction:column;gap:5px}
+#keysOnboardingPrototype .kon2-request small{font-size:10px;line-height:14px;color:#79718c}
+#keysOnboardingPrototype .kon2-request strong{font-size:18px;line-height:22px;letter-spacing:-.3px}
+#keysOnboardingPrototype .kon2-signal{position:absolute;top:122px;display:flex;align-items:center;justify-content:center;gap:5px;padding:8px 10px;border-radius:18px;background:#fff;font-size:10px;line-height:16px;color:#715389}
+#keysOnboardingPrototype .kon2-signal svg{width:14px;height:14px}
+#keysOnboardingPrototype .kon2-signal-likes{left:18px;color:#a8376a}
+#keysOnboardingPrototype .kon2-signal-likes svg{fill:#f5c5d7}
+#keysOnboardingPrototype .kon2-signal-views{right:18px}
+#keysOnboardingPrototype .kon2-personal-core{position:absolute;left:134px;top:112px;display:grid;place-items:center;width:52px;height:52px;border-radius:18px;background:#3a66f0;box-shadow:0 0 0 7px #e4def5}
+#keysOnboardingPrototype .kon2-personal-core img{width:30px;height:30px;filter:brightness(0) invert(1)}
+#keysOnboardingPrototype .kon2-shortlist-label{position:absolute;top:186px;left:0;right:0;text-align:center;font-size:12px;line-height:17px;font-weight:500;color:#6a4a91}
+#keysOnboardingPrototype .kon2-shortlist{position:absolute;left:14px;right:14px;top:209px;padding:7px 12px;border-radius:24px;background:#fff;box-shadow:0 12px 30px #5038750d}
+#keysOnboardingPrototype .kon2-shortlist-item{display:flex;align-items:center;gap:10px;padding:9px 0}
+#keysOnboardingPrototype .kon2-shortlist-item+.kon2-shortlist-item{border-top:1px solid #f1edf6}
+#keysOnboardingPrototype .kon2-shortlist-item>img{width:61px;height:48px;flex:none;object-fit:cover;border-radius:12px}
+#keysOnboardingPrototype .kon2-shortlist-item>div{display:flex;flex-direction:column;gap:5px;min-width:0;flex:1}
+#keysOnboardingPrototype .kon2-shortlist-item strong{font-size:13px;line-height:17px}
+#keysOnboardingPrototype .kon2-shortlist-item>div>span{display:flex;align-items:center;gap:3px;font-size:9px;line-height:14px;color:#39785c;white-space:nowrap}
+#keysOnboardingPrototype .kon2-shortlist-item>div svg{width:11px;height:11px}
+#keysOnboardingPrototype .kon2-shortlist-heart{color:#9a89ac;flex:none}
+#keysOnboardingPrototype .kon2-shortlist-heart svg{width:16px;height:16px}
+@media(prefers-reduced-motion:no-preference){
+ #keysOnboardingPrototype .is-current .kon2-hub>img{animation:kon2-orbit 12s linear infinite}
+ #keysOnboardingPrototype .is-current .kon2-connections{animation:kon2-connect 4s linear infinite}
+ #keysOnboardingPrototype .is-current .kon2-personal-core img{animation:kon2-orbit 12s linear infinite}
+}
+@keyframes kon2-orbit{to{transform:rotate(360deg)}}
+@keyframes kon2-connect{to{stroke-dashoffset:-32}}
+@container(max-height:700px){
+ #keysOnboardingPrototype[data-variant="2"] .kon-copy{padding-top:14px}
+ #keysOnboardingPrototype [data-theme="trip"] .kon-eyebrow{margin-bottom:6px;padding:2px 8px}
+ #keysOnboardingPrototype[data-variant="2"] .kon-copy p{margin-top:8px}
+}
